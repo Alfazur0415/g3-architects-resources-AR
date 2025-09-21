@@ -18,8 +18,12 @@
     margin: 0 auto;
 }
 /* share style */
-.display-flex{
+.display-flex, .teams{
     display:flex;
+}
+main > section{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .btn-primary{
     background-color: #FF900E;
@@ -31,11 +35,18 @@
     border: none;
 }
 /* dark-color style */
+.dark-1{
+    color: #020202;
+}
 .dark-2{
     color: #424242;
 }
 .dark-3{
     color: #727272;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 2.8rem;
 }
 
 /* header Style */
@@ -75,6 +86,73 @@
 .banner-mage{
     width: 100%;
 }
+
+/* teams &  features related style */
+.teams{
+    align-items: center;
+    margin-top: 130px;
+}
+.teams-image-containar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.teams-features-containar{
+    margin-left: 73px;
+    max-width: 537px;
+}
+
+.features{
+    color: #FF900E;
+}
+/* features & architects related syle */
+.features-text-containar, .features-list-containar{
+    max-width: 468px;
+    margin: 0 auto;
+}
+.features-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+}
+.features-architects-containar{
+    align-items: center;
+    margin-top: 130px;
+}
+.architects-image{
+    padding: 0px 0px 77px 92px;
+}
+.features-area{
+    max-width: 586px;
+
+}
+.display-gap{
+    gap: 54px;
+}
+/* features list containar  */
+.features-item{
+    padding: 30px 30px;
+    box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ten-year-btn */
+.ten-year-btn{
+    width: 342px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    padding: 20px 5px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 4rem;
+    border: none;
+    position: relative;
+    left:0;
+    top: -250px;
+}
+#explore-more{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 /* media Query */
 @media screen and (max-width: 768px) {
     .banner-title{
